@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Sause Official</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script> <!-- Stripe -->
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">1 Sause Official</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+        <h1>Colorful. Thick. Lasting. Glossy.</h1>
+        <img src="product.png" alt="1 Sause Official Product">
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Featured Product</h2>
+        <div class="product-card">
+            <img src="product.png" alt="1 Sause Official Product">
+            <h3>1 Sause Official Cosmetic</h3>
+            <p>Thick, long-lasting, glossy</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total"></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:officialsause@icloud.com">officialsause@icloud.com</a></p>
+        <p>Phone: 802-353-3888</p>
+        <p>TikTok: <a href="https://www.tiktok.com/@1sause" target="_blank">@1sause</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 1 Sause Official. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
